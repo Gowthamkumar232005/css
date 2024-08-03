@@ -1,0 +1,48 @@
+.nlogo{
+    height: 100px;
+}
+.nbody{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCKVj1-g3zHrU5AeECjoDetg4Hmocpqa2BQ&s://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg') ;
+}
+.nlink{
+    color: white;
+}
+.nlink:hover{
+    color:aqua;
+}
+.anchor{
+    margin-left: auto;
+}
+.conl{
+    text-align: center;
+    font-size: 19px;
+}
+.conr{
+}
+.conimg{
+    height: 50vh;
+}
+.body-section{
+    height: 80vh;
+}
+.feature{
+    text-align: center;
+    font-size: 19px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.price{
+    text-align: center;
+    font-size:19px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.cnt{
+    text-align: center;
+}
+.icon{
+    height: 40px;
+    margin: 5px;
+}
