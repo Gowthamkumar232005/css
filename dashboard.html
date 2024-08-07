@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Social Media Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Connect Accounts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="feed">
+                <h2>Twitter Feed</h2>
+                <div class="post">
+                    <p>Tweet 1 content here...</p>
+                </div>
+                <div class="post">
+                    <p>Tweet 2 content here...</p>
+                </div>
+            </section>
+            <section class="feed">
+                <h2>Facebook Feed</h2>
+                <div class="post">
+                    <p>Facebook post 1 content here...</p>
+                </div>
+                <div class="post">
+                    <p>Facebook post 2 content here...</p>
+                </div>
+            </section>
+            <section class="feed">
+                <h2>Instagram Feed</h2>
+                <div class="post">
+                    <p>Instagram post 1 content here...</p>
+                </div>
+                <div class="post">
+                    <p>Instagram post 2 content here...</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Social Media Dashboard</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelectorAll('.login-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('This button will trigger the OAuth login flow.');
+            });
+        });
+        
+        // Dummy data for demonstration purposes
+        const dummyPosts = {
+            facebook: [
+                'Facebook Post 1',
+                'Facebook Post 2',
+                'Facebook Post 3'
+            ],
+            twitter: [
+                'Twitter Post 1',
+                'Twitter Post 2',
+                'Twitter Post 3'
+            ],
+            instagram: [
+                'Instagram Post 1',
+                'Instagram Post 2',
+                'Instagram Post 3'
+            ]
+        };
+        
+        function loadDummyData() {
+            Object.keys(dummyPosts).forEach(platform => {
+                const postsContainer = document.querySelector(`#${platform}-feed .posts`);
+                dummyPosts[platform].forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('post');
+                    postElement.textContent = post;
+                    postsContainer.appendChild(postElement);
+                });
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', loadDummyData);
+        
+    </script>
+</body>
+</html>
